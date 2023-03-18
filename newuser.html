@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CREATE A NEW USER</title>
+	<style>
+		/* Set the container to full height */
+		body {
+        height: 100%;
+      }
+
+      /* Set the video to cover the entire background */
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      /* Style the text */
+      h1 {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+        margin-top: 25%;
+      }	
+
+		form {
+			margin: 40px auto;
+			width: 300px;
+			background: transparent;
+			border: 0px solid rgba(50,50,50,0.2);
+			justify-content: center;
+			padding: 100px;
+			border-radius: 2px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 2px;
+			
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="number"] {
+			display: block;
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+			input[type="sign-up"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		
+		input[type="submit"]:hover {
+			background-color: #3E8E41;
+
+		}
+button 
+{
+  background-color:	#0096FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+	color: rgb(255, 255, 255);
+	font-weight: 1;
+}
+
+	</style>
+</head>
+<body>
+	
+	<video autoplay muted loop>
+		<source src="background2.mp4" type="video/mp4">
+	  </video>
+	<form action="/bank/connect.php" method="post" >
+
+		<label for="acc_no"><pre><h2>Enter New Account Number:</h2></pre></label>
+		<input type="text" id="acc_no" name="acc_no" class="acc_no" placeholder="ENTER YOUR ACCOUNT NO.">
+		
+		<label for="password"><pre><h2>Enter New Password:</h2></pre></label>
+		<input type="text" id="password" name="password" class="password" placeholder="ENTER YOUR 4-DIGIT PIN">
+
+		<label for="age"><pre><h2>Enter Age:</h2></pre></label>
+		<input type="number" id="age" name="age" name="age" placeholder="ENTER YOUR AGE">
+
+		<label for="balance"><pre><h2>Enter the amount you want to invest:</h2></pre></label>
+		<input type="text" id="balance" name="balance" placeholder="ENTER balance ">
+
+		<label for="checkbox"></label>
+
+		<input type="submit">
+	</form>
+	<script type="text/javascript" src="sign-up.js">
+
+	</script>
+</body>
+</html>
